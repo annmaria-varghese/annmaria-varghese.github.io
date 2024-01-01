@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Ann Maria Varghese</h1>
+</body>
+</html>
