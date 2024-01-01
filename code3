@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unordered list</title>
+</head><ul><li>Apple</li>
+      <li>Bananna</li>
+      <li>Cherry</li>
+      <li>Litchi</li>
+      <li>kiwi</li>
+    </ul>
+</body>
+</html>
