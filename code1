@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table</title>
+</head>
+<body>
+<p>
+<b><Center>In short the padded tags are given below</b></p>
+    <table bgcolor="white" width="60" height="70" border="2">
+  <tr>
+    <th bgcolor="pink"> Padded tag</th>
+  </tr>
+  <tr>
+    <td><ul>
+        <li>B</li>
+  <li>big</li>
+  <li>small</li>
+  <li>font</li>
+  <li>strike</li>
+  <li>sub</li>
+  <li>sup</li>
+  <li>tt</li>
+  <li>u</li>
+  <li>abbr</li>
+  <li>acronym</li>
+  <li>address</li>
+  <li>cite</li>
+  <li>code</li>
+  <li>del</li>
+  <li>ins</li>
+  <li>def</li>
+  <li>em</li>
+  <li>sample</li>
+  <li>var</li>
+    </ul></td>
+  </tr>
+</table></Center>
+</body></html>
