@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin:50px;
+      padding:80px;
+      text-align: center;
+      background-color:#15B197 ;
+    }
+    h1 {
+      margin-bottom: 50px;
+    }
+    #inputContainer {
+      margin-bottom: 50px;
+    }
+    input[type='text'] {
+      padding: 80px;
+      border: 80px solid #ccc;
+      border-radius: 15px;
+      margin-right: 50px;
+    }
+    button {
+      padding: 100px 15px;
+      background-color:#A39074;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.8s ease;
+    }
+    button:hover {
+      background-color: #883E7C;
+    }
+    ul {
+      list-style: none;
+      padding: 80px;
+    }
+    li {
+      margin: 50px;
+      display: inline-block;
+      padding: 80px 20px;
+      background-color: #8EAE79;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1> NAMES OF COUNTRIES</h1>
+  <div id="inputContainer">
+    <input type="text" id="countryInput" placeholder="Enter A Country Name">
+    <button onclick="addCountry()">Add</button>
+  </div>
+  <ul id="countryList"></ul>
+
+  <script>
+    const countryList = [];
+
+    function addCountry() {
+      const inputField = document.getElementById('countryInput');
+      const countryName = inputField.value.trim();
+      if (countryName !== '') {
+        countryList.push(countryName);
+        inputField.value = '';
+        displayCountryNames();
+      }
+    }
+
+    function displayCountryNames() {
+      const sortedList = countryList.slice().sort(); // Create a copy and sort it
+      const countryListElement = document.getElementById('countryList');
+      countryListElement.innerHTML = '';
+      sortedList.forEach(name => {
+        const listItem = document.createElement('li');
+        listItem.textContent = name;
+        countryListElement.appendChild(listItem);
+      });
+    }
+  </script>
+</body>
+</html>
